@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    header {
+      width: 100%;
+      background-color: #ab192d;
+      padding: 0;
+      margin: 0;
+      img {
+        height: 10.5em;
+        margin-left: 1.2em;
+      }
+      a {
+        display: none;
+      }
+    }
+    .navbtn {
+      border: none;
+      outline: none;
+      background-color: #000;
+      position: fixed;
+      top: 5.2em;
+      width: 3em;
+      height: 3em;
+      right: 2em;
+      z-index: 10;
+      div {
+        position: absolute;
+        height: 2px;
+        width: 30px;
+        transform: null;
+        right: calc(50% - 15px);
+        background-color: #fff;
+        transition: 0.4s ease;
+      }
+      #btn_div_1 {
+        top: 7px;
+      }
+      #btn_div_2 {
+        top: calc(50% - 1px);
+      }
+      #btn_div_3 {
+        bottom: 7px;
+      }
+    }
+    nav {
+      height: 100vh;
+      position: fixed;
+      display: block;
+      top: 0;
+      right: 0;
+      z-index: 9;
+      padding-top: 8em;
+      width: 0;
+      transition: 0.8s ease;
+      background-color: rgba(6, 17, 27, 0.54);
+      a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: clip;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 500;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        padding: 1.5em 2em;
+      }
+    }
+    .slider {
+      padding: 0;
+      margin: 0;
+      .fig {
+        padding: 0;
+        margin: 0;
+        height: 25em;
+        position: relative;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        background-size: cover;
+        figcaption {
+          background-color: rgba(0, 0, 0, 0.7);
+          width: 70%;
+          padding: 1.5em 1.2em;
+          position: absolute;
+          top: 7em;
+          left: 1.6em;
+          font-family: "Montserrat", sans-serif;
+          h2 {
+            color: #c72d42;
+            margin: 0;
+            font-size: 1.15em;
+            font-weight: 900;
+            text-shadow: 0 5px 5px rgba(0,0,0,0.75);
+          }
+          h3 {
+            font-size: 1em;
+            margin: 0;
+            margin-top: 1em;
+            color: white;
+            line-height: 1.8em;
+            font-weight: 300;
+          }
+        }
+      }
+      #fig_1 {background-image: url("../img/banner1.jpg");}
+      #fig_2 {background-image: url("../img/banner2.jpg");}
+      #fig_3 {background-image: url("../img/banner3.jpg");}
+      #fig_4 {background-image: url("../img/banner4.jpg");}
+      #fig_5 {background-image: url("../img/banner5.jpg");}
+      #fig_6 {background-image: url("../img/banner6.jpg");}
+      #fig_7 {background-image: url("../img/banner7.jpg");}
+    }
+  }
+}

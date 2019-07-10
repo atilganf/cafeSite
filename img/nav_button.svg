@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="68" viewBox="0 0 72 68">
+  <g id="nav_button" data-name="nav button" transform="translate(-1711 -121)">
+    <rect id="Rectangle_3" data-name="Rectangle 3" width="72" height="68" transform="translate(1711 121)"/>
+    <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(1721 133)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="52" height="6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="51" height="5" fill="none"/>
+    </g>
+    <g id="Rectangle_5" data-name="Rectangle 5" transform="translate(1721 152)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="52" height="6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="51" height="5" fill="none"/>
+    </g>
+    <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(1721 171)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="52" height="6" stroke="none"/>
+      <rect x="0.5" y="0.5" width="51" height="5" fill="none"/>
+    </g>
+  </g>
+</svg>
