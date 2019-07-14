@@ -31,7 +31,7 @@ function plusSlide(n) {
     if (n) { cs += n }
     if (cs == 7) { cs = 0 }
     if (cs == -1) { cs = 6 }
-    fig.style.backgroundImage = "url(../img/banner" + (cs + 1) + ".jpg)";
+    fig.style.backgroundImage = "url(img/banner" + (cs + 1) + ".jpg)";
     setTimeout(function () {
         slides[cs].classList.add("active_figc");
     }, 1000);

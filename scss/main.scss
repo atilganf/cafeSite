@@ -47,7 +47,6 @@ html {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    overflow-y: scroll;
     header {
       width: 100%;
       background-color: #ab192d;
@@ -146,7 +145,7 @@ html {
         background-position-x: 50%;
         background-position-y: 50%;
         background-size: cover;
-        background-image: url("../img/banner1.jpg");
+        background-image: url("img/banner1.jpg");
         transition: background-image 1s;
         figcaption {
           background-color: rgba(0, 0, 0, 0.7);
