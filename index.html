@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Montserrat|Open+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5867ed6a75.js"></script>
 </head>
 
@@ -30,48 +29,36 @@
         <a href="#contact">İletİşİm</a>
     </nav>
     <section class="slider">
-        <figure class="fig active_fig" id="fig_1">
-            <figcaption>
+        <figure id="fig">
+            <figcaption class="figc active_figc">
                 <h2>Manisa'da seçkin bir buluşma noktası</h2>
                 <h3>Akşam yemeklerinin yanı sıra öğle yemeklerinde de
                     zengin menüsü ile tercih edilen kaliteli bir mekan Dora's.</h3>
             </figcaption>
-        </figure>
-        <figure class="fig" id="fig_2">
-            <figcaption>
+            <figcaption class="figc">
                 <h2>Mutfağımızdan unutulmaz lezzetler...</h2>
                 <h3>Değerli konuklarımız için kaliteli lezzetleri,
                     keyifli bir ortamda sunuyoruz.</h3>
             </figcaption>
-        </figure>
-        <figure class="fig" id="fig_3">
-            <figcaption>
+            <figcaption class="figc">
                 <h2>Hedefimiz en iyisi...</h2>
                 <h3>Sağlık ve kaliteden ödün vermeden seçkin konuklarımıza
                     en iyiyi sunmayı hedefliyoruz.</h3>
             </figcaption>
-        </figure>
-        <figure class="fig" id="fig_4">
-            <figcaption>
+            <figcaption class="figc">
                 <h2>Bir Lezzet Yolculuğu...</h2>
                 <h3>Sunduğumuz menü ile sizleri bir lezzet yolculuğuna çıkarıyoruz.</h3>
             </figcaption>
-        </figure>
-        <figure class="fig" id="fig_5">
-            <figcaption>
+            <figcaption class="figc">
                 <h2>Mükemmel bir yemek deneyimi...</h2>
                 <h3>Dora's yenilikçi anlayışı ve özgün tarzıyla sizlere
                     mükemmel bir yemek deneyimi sunuyor.</h3>
             </figcaption>
-        </figure>
-        <figure class="fig" id="fig_6">
-            <figcaption>
+            <figcaption class="figc">
                 <h2>İlham veren bir ortamda, seçkin bir menü ile...</h2>
                 <h3>İlham veren bu şık ortamda, yemeklerin gerçek tadına varabileceksiniz.</h3>
             </figcaption>
-        </figure>
-        <figure class="fig" id="fig_7">
-            <figcaption>
+            <figcaption class="figc">
                 <h2>Tatlı sohbetlerin vazgeçilmez mekanı...</h2>
                 <h3>Her kültürden öğeler barındıran geniş sıcak & soğuk içecek menümüz ile
                     sohbetlerinizin vazgeçilmez mekanı.</h3>
@@ -83,30 +70,84 @@
             <span id="next">&#8250;</span>
         </div>
     </section>
-    <section>
+    <section class="about">
         <article>
             <h1>DORA'S CAFE & BRASSERIE
                 HAKKINDA</h1>
             <p>Misafirlerinin konfor ve damak tadını ön planda tutan, dostlarınızla buluşup sohbetin keyfini
                 dilediğinizce sürdürebileceğiniz sıcak bir mekan.
-
+                <br><br>
                 Manisa'nın merkezinde Magnesia AVM'de buluşalım...</p>
-            <button>E-Menü için tıklayınız.</button>
+            <button>E-Menü için tıklayınız</button>
         </article>
         <figure>
             <img src="img/hakkimizda-pic.jpg" alt="">
             <img src="img/hakkimizda-pic-2.jpg" alt="">
         </figure>
     </section>
-    <section>
+    <section class="menu">
         <h1>menümüz</h1>
         <div class="menu-cont">
 
         </div>
 
     </section>
+    <section class="why">
+        <h1 class="h1">neden dora's cafe & brasserie ?</h1>
+        <figure class="fig_why">
+            <img src="../img/neden-doras.jpg" alt="">
+            <figcaption>
+                <h1>taze & doğal</h1>
+                <h2>malzemeler</h2>
+            </figcaption>
+            <h4>En taze ve doğal malzemeler.</h4>
+        </figure>
+        <figure class="fig_why">
+            <img src="../img/neden-doras-2.jpg" alt="">
+            <figcaption>
+                <h1>profesyonel</h1>
+                <h2>ekİp</h2>
+            </figcaption>
+            <h4>Heri biri alanında uzman profesyonel ekip.</h4>
+        </figure>
+        <figure class="fig_why">
+            <img src="../img/neden-doras-3.jpg" alt="">
+            <figcaption>
+                <h1>zengİn İçerİklİ</h1>
+                <h2>menü</h2>
+            </figcaption>
+            <h4>Zengin yemek ve içecek seçenekleri.</h4>
+        </figure>
+    </section>
+    <footer>
+        <div id="map"></div>
+        <div class="message">
+            <input type="text" placeholder="İsim - Soyad" required>
+            <input type="text" placeholder="E-mail Adresiniz" required>
+            <input type="text" placeholder="Telefonunuz" required>
+            <textarea placeholder="Mesajınız"></textarea>
+            <button type="submit">Gönder</button>
+        </div>
+        <div class="contact">
+            <h2>İLETİŞİM</h2>
+            <p>
+                Laleli Ali Rıza Efendi Cad. No:4 <br>
+                Forum Magnesia AVM M. No: 207 <br>
+                Yunusemre / Manisa <br>
+                T. <a href="callto:02362361516">0236 236 15 16</a><br>
+                F. <a href="callto:02362361517">0236 236 15 17</a><br>
+                <a href="mailto:info@dorascafe.com">info@dorascafe.com</a><br>
+                Hafta içi: 09.00 - 23.30 <br>
+                Hafta sonu: 09.00 - 01.00
+            </p>
+        </div>
+    </footer>
 </body>
 
 <script src="js/main.js"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_Vp9S6caeV0Gy1NJtSBRGOCm46g2hH9Y&callback=initMap">
+</script>
+
 
 </html>

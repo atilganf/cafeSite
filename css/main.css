@@ -1,8 +1,45 @@
+@font-face {
+  font-family: avantgarde_medium;
+  src: url("../css/web-fonts/AvantGardeLTMedium.woff2");
+}
+@font-face {
+  font-family: avantgarde_bold;
+  src: url("../css/web-fonts/AvantGardeLTMedium-Bold.woff2");
+}
+@font-face {
+  font-family: cormorantGaramond;
+  src: url("../css/web-fonts/CormorantGaramond-Medium.woff2");
+}
+@font-face {
+  font-family: geometria;
+  src: url("../css/web-fonts/geometria-webfont.woff2");
+}
+@font-face {
+  font-family: geometria_medium;
+  src: url("../css/web-fonts/geometria-medium-webfont.woff2");
+}
+@font-face {
+  font-family: avantgarde_regular;
+  src: url("../css/web-fonts/ITCAvantGardeGothicLTBook.woff2");
+}
+@font-face {
+  font-family: opensans_light;
+  src: url("../css/web-fonts/opensans-light-webfont.woff2");
+}
+@font-face {
+  font-family: opensans;
+  src: url("../css/web-fonts/opensans-regular-webfont.woff2");
+}
+@font-face {
+  font-family: opensans_semibold;
+  src: url("../css/web-fonts/opensans-semibold-webfont.woff2");
+}
 * {
   box-sizing: border-box;
 }
 
 html {
+  overflow: auto;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -11,6 +48,7 @@ html body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 html body header {
   width: 100%;
@@ -60,30 +98,47 @@ html body nav {
   top: 0;
   right: 0;
   z-index: 9;
-  padding-top: 8em;
+  padding-top: 7em;
   width: 0;
   transition: 0.8s ease;
   background-color: rgba(6, 17, 27, 0.54);
 }
 html body nav a {
   text-decoration: none;
+  position: relative;
   color: white;
   display: block;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: clip;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 500;
+  font-family: "avantgarde_medium", sans-serif;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  font-size: 0.9em;
-  padding: 1.5em 2em;
+  font-size: 0.83em;
+  padding: 1em 1.8em;
+  margin: 1.5em 0;
+  z-index: 9;
+  transition: background-color 0.6s;
+}
+html body nav a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: 100%;
+  background-color: #ab192d;
+  width: 100%;
+  height: 100%;
+  transition: left 0.4s ease;
+}
+html body nav a:hover::before {
+  left: 0%;
 }
 html body .slider {
   padding: 0;
   margin: 0;
 }
-html body .slider .fig {
+html body .slider #fig {
   padding: 0;
   margin: 0;
   height: 25em;
@@ -91,51 +146,297 @@ html body .slider .fig {
   background-position-x: 50%;
   background-position-y: 50%;
   background-size: cover;
+  background-image: url("../img/banner1.jpg");
+  transition: background-image 1s;
 }
-html body .slider .fig figcaption {
+html body .slider #fig figcaption {
   background-color: rgba(0, 0, 0, 0.7);
   width: 70%;
   padding: 1.5em 1.2em;
   position: absolute;
-  top: 7em;
+  top: 10em;
   left: 1.6em;
-  font-family: "Montserrat", sans-serif;
+  opacity: 0;
+  transition: 1s;
 }
-html body .slider .fig figcaption h2 {
+html body .slider #fig figcaption h2 {
   color: #c72d42;
   margin: 0;
-  font-size: 1.15em;
-  font-weight: 900;
+  font-size: 1.1em;
+  font-family: avantgarde_bold, sans-serif;
+  font-weight: normal;
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
 }
-html body .slider .fig figcaption h3 {
+html body .slider #fig figcaption h3 {
   font-size: 1em;
   margin: 0;
   margin-top: 1em;
+  font-family: avantgarde_regular, sans-serif;
   color: white;
+  font-weight: normal;
   line-height: 1.8em;
+}
+html body .slider #fig .active_figc {
+  opacity: 1;
+  top: 7em;
+}
+html body .slider .btns {
+  display: none;
+}
+html body .about {
+  padding: 1.9em;
+  background-image: url("../img/hakkimizda-bg.jpg");
+  background-size: contain;
+}
+html body .about article {
+  padding-top: 1.5em;
+}
+html body .about article h1 {
+  font-size: 25px;
+  line-height: 1.1em;
+  width: 10em;
+  font-family: cormorantGaramond, sans-serif;
+  font-weight: 500;
+  color: #414a52;
+}
+html body .about article h1::after {
+  content: "";
+  display: block;
+  margin-top: 0.8em;
+  width: 50px;
+  height: 2px;
+  border-top: 3px solid black;
+  border-bottom: 1px solid black;
+}
+html body .about article p {
+  font-family: opensans_light, sans-serif;
+  line-height: 28px;
+  font-size: 1em;
+  color: #414a52;
+  padding-top: 1.6em;
+}
+html body .about article button {
+  border: 1px solid #ab192d;
+  font-size: 1.25em;
+  padding: 0.6em 0.75em;
+  outline: none;
+  margin-top: 1.17em;
+  font-family: cormorantGaramond, sans-serif;
+  background-color: inherit;
+  color: #ab192d;
+}
+html body .about figure {
+  padding: 0;
+  padding-bottom: 1.8em;
+  margin: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0;
+  height: auto;
+  margin-top: 1.7em;
+}
+html body .about figure img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: inline-block;
+}
+html body .menu {
+  display: none;
+}
+html body .why {
+  padding: 1.9em;
+}
+html body .why .h1 {
+  font-size: 25px;
+  line-height: 1.1em;
+  display: block;
+  margin-top: 0.1em;
+  text-transform: uppercase;
+  font-family: cormorantGaramond, sans-serif;
+  font-weight: 500;
+  color: #414a52;
+}
+html body .why .h1::after {
+  content: "";
+  display: block;
+  margin-top: 0.8em;
+  width: 50px;
+  height: 2px;
+  border-top: 3px solid black;
+  border-bottom: 1px solid black;
+}
+html body .why figure {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  margin: 1em 0;
+}
+html body .why figure img {
+  width: 100%;
+  transition: filter 0.5s;
+}
+html body .why figure figcaption {
+  text-transform: uppercase;
+  font-family: avantgarde_medium, sans-serif;
+  position: absolute;
+  z-index: 8;
+  top: 10%;
+  right: 12%;
+}
+html body .why figure figcaption h1 {
+  color: #fff;
+  font-size: 1.8em;
+  padding: 0;
+  font-weight: 400;
+  margin: 0;
+}
+html body .why figure figcaption h1:after, html body .why figure figcaption h1:before {
+  content: "";
+  overflow: hidden;
+  position: absolute;
+  width: 2px;
+  height: 0;
+  background-color: #fff;
+}
+html body .why figure figcaption h1:after {
+  bottom: -200%;
+  right: -8px;
+}
+html body .why figure figcaption h1:before {
+  top: -50%;
+  left: -8px;
+}
+html body .why figure figcaption h2 {
+  color: #000;
+  padding: 0;
+  font-size: 1.1em;
+  padding: 0.25em;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  background-color: #fff;
+}
+html body .why figure figcaption:before, html body .why figure figcaption:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: #fff;
+  position: absolute;
+  overflow: hidden;
+}
+html body .why figure figcaption:before {
+  right: -50%;
+  top: -8px;
+}
+html body .why figure figcaption:after {
+  left: -50%;
+  bottom: -8px;
+}
+html body .why figure h4 {
+  text-transform: initial;
+  color: #fff;
+  text-align: right;
+  font-weight: 400;
+  font-size: 0.85em;
+  margin-top: 1.5em;
+  font-family: avantgarde_medium, sans-serif;
+  position: absolute;
+  z-index: 8;
+  top: 38%;
+  opacity: 0;
+  right: 12%;
+  width: 70%;
+  transition: opacity 0.5s;
+}
+html body .why figure figcaption::before,
+html body .why figure figcaption:after,
+html body .why figure figcaption h1::before,
+html body .why figure figcaption h1::after {
+  transition: 0.5s;
+}
+html body .why figure:hover img {
+  filter: brightness(30%);
+}
+html body .why figure:hover h4 {
+  opacity: 1;
+}
+html body .why figure:hover figcaption h1::before {
+  height: 150%;
+}
+html body .why figure:hover figcaption h1::after {
+  height: 300%;
+}
+html body .why figure:hover figcaption::before, html body .why figure:hover figcaption:after {
+  width: 150%;
+}
+html body footer #map {
+  width: 100%;
+  height: 23em;
+  margin-top: 3em;
+  overflow: hidden;
+}
+html body footer .message {
+  padding: 0.6em 2.3em;
+  background-image: url("../img/contact-form-bg.jpg");
+  background-position-x: 0%;
+  background-position-y: 50%;
+  background-size: cover;
+}
+html body footer .message input,
+html body footer .message textarea,
+html body footer .message button {
+  width: 100%;
+  padding: 0.65em;
+  margin: 1em 0 0 0;
+  font-size: 0.95em;
+  background-color: inherit;
+  border: 1px solid #ccc;
+  color: white;
+  font-family: avantGarde_regular, sans-serif;
   font-weight: 300;
+  outline: none;
+  transition: 0.6s;
 }
-html body .slider #fig_1 {
-  background-image: url("../img/banner1.jpg");
+html body footer .message input:hover,
+html body footer .message textarea:hover {
+  border: 1px solid #a8171c;
 }
-html body .slider #fig_2 {
-  background-image: url("../img/banner2.jpg");
+html body footer .message textarea {
+  height: 6.4em;
 }
-html body .slider #fig_3 {
-  background-image: url("../img/banner3.jpg");
+html body footer .message button {
+  width: 50%;
+  background-color: #171717;
+  border: none;
+  margin-bottom: 1em;
 }
-html body .slider #fig_4 {
-  background-image: url("../img/banner4.jpg");
+html body footer .message button:hover {
+  background: #a8171c;
 }
-html body .slider #fig_5 {
-  background-image: url("../img/banner5.jpg");
+html body footer .contact {
+  background-color: #252120;
+  color: white;
+  padding: 2.5em 1.9em;
 }
-html body .slider #fig_6 {
-  background-image: url("../img/banner6.jpg");
+html body footer .contact h2 {
+  font-family: geometria_medium, sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
 }
-html body .slider #fig_7 {
-  background-image: url("../img/banner7.jpg");
+html body footer .contact p {
+  font-family: geometria, sans-serif;
+  padding: 0;
+  color: #b7b7b7;
+  line-height: 1.4em;
+  margin: 0;
+}
+html body footer .contact p a {
+  text-decoration: none;
+  color: #b7b7b7;
 }
 
 /*# sourceMappingURL=main.css.map */
