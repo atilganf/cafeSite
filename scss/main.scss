@@ -145,7 +145,7 @@ html {
         background-position-x: 50%;
         background-position-y: 50%;
         background-size: cover;
-        background-image: url("img/banner1.jpg");
+        background-image: url("../img/banner1.jpg");
         transition: background-image 1s;
         figcaption {
           background-color: rgba(0, 0, 0, 0.7);
@@ -183,9 +183,9 @@ html {
         display: none;
       }
     }
-    .about {
+    #about {
       padding: 1.9em;
-      background-image: url("img/hakkimizda-bg.jpg");
+      background-image: url("../img/hakkimizda-bg.jpg");
       background-size: contain;
       article {
         padding-top: 1.5em;
@@ -242,10 +242,10 @@ html {
         }
       }
     }
-    .menu {
+    #menu {
       display: none;
     }
-    .why {
+    #why {
       padding: 1.9em;
       .h1 {
         font-size: 25px;
@@ -386,7 +386,7 @@ html {
       }
       .message {
         padding: 0.6em 2.3em;
-        background-image: url("img/contact-form-bg.jpg");
+        background-image: url("../img/contact-form-bg.jpg");
         background-position-x: 0%;
         background-position-y: 50%;
         background-size: cover;

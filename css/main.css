@@ -145,7 +145,7 @@ html body .slider #fig {
   background-position-x: 50%;
   background-position-y: 50%;
   background-size: cover;
-  background-image: url("img/banner1.jpg");
+  background-image: url("../img/banner1.jpg");
   transition: background-image 1s;
 }
 html body .slider #fig figcaption {
@@ -182,15 +182,15 @@ html body .slider #fig .active_figc {
 html body .slider .btns {
   display: none;
 }
-html body .about {
+html body #about {
   padding: 1.9em;
-  background-image: url("img/hakkimizda-bg.jpg");
+  background-image: url("../img/hakkimizda-bg.jpg");
   background-size: contain;
 }
-html body .about article {
+html body #about article {
   padding-top: 1.5em;
 }
-html body .about article h1 {
+html body #about article h1 {
   font-size: 25px;
   line-height: 1.1em;
   width: 10em;
@@ -198,7 +198,7 @@ html body .about article h1 {
   font-weight: 500;
   color: #414a52;
 }
-html body .about article h1::after {
+html body #about article h1::after {
   content: "";
   display: block;
   margin-top: 0.8em;
@@ -207,14 +207,14 @@ html body .about article h1::after {
   border-top: 3px solid black;
   border-bottom: 1px solid black;
 }
-html body .about article p {
+html body #about article p {
   font-family: opensans_light, sans-serif;
   line-height: 28px;
   font-size: 1em;
   color: #414a52;
   padding-top: 1.6em;
 }
-html body .about article button {
+html body #about article button {
   border: 1px solid #ab192d;
   font-size: 1.25em;
   padding: 0.6em 0.75em;
@@ -224,7 +224,7 @@ html body .about article button {
   background-color: inherit;
   color: #ab192d;
 }
-html body .about figure {
+html body #about figure {
   padding: 0;
   padding-bottom: 1.8em;
   margin: 0;
@@ -235,19 +235,19 @@ html body .about figure {
   height: auto;
   margin-top: 1.7em;
 }
-html body .about figure img {
+html body #about figure img {
   margin: 0;
   padding: 0;
   width: 100%;
   display: inline-block;
 }
-html body .menu {
+html body #menu {
   display: none;
 }
-html body .why {
+html body #why {
   padding: 1.9em;
 }
-html body .why .h1 {
+html body #why .h1 {
   font-size: 25px;
   line-height: 1.1em;
   display: block;
@@ -257,7 +257,7 @@ html body .why .h1 {
   font-weight: 500;
   color: #414a52;
 }
-html body .why .h1::after {
+html body #why .h1::after {
   content: "";
   display: block;
   margin-top: 0.8em;
@@ -266,17 +266,17 @@ html body .why .h1::after {
   border-top: 3px solid black;
   border-bottom: 1px solid black;
 }
-html body .why figure {
+html body #why figure {
   padding: 0;
   margin: 0;
   position: relative;
   margin: 1em 0;
 }
-html body .why figure img {
+html body #why figure img {
   width: 100%;
   transition: filter 0.5s;
 }
-html body .why figure figcaption {
+html body #why figure figcaption {
   text-transform: uppercase;
   font-family: avantgarde_medium, sans-serif;
   position: absolute;
@@ -284,14 +284,14 @@ html body .why figure figcaption {
   top: 10%;
   right: 12%;
 }
-html body .why figure figcaption h1 {
+html body #why figure figcaption h1 {
   color: #fff;
   font-size: 1.8em;
   padding: 0;
   font-weight: 400;
   margin: 0;
 }
-html body .why figure figcaption h1:after, html body .why figure figcaption h1:before {
+html body #why figure figcaption h1:after, html body #why figure figcaption h1:before {
   content: "";
   overflow: hidden;
   position: absolute;
@@ -299,15 +299,15 @@ html body .why figure figcaption h1:after, html body .why figure figcaption h1:b
   height: 0;
   background-color: #fff;
 }
-html body .why figure figcaption h1:after {
+html body #why figure figcaption h1:after {
   bottom: -200%;
   right: -8px;
 }
-html body .why figure figcaption h1:before {
+html body #why figure figcaption h1:before {
   top: -50%;
   left: -8px;
 }
-html body .why figure figcaption h2 {
+html body #why figure figcaption h2 {
   color: #000;
   padding: 0;
   font-size: 1.1em;
@@ -317,7 +317,7 @@ html body .why figure figcaption h2 {
   text-align: center;
   background-color: #fff;
 }
-html body .why figure figcaption:before, html body .why figure figcaption:after {
+html body #why figure figcaption:before, html body #why figure figcaption:after {
   content: "";
   height: 2px;
   width: 0;
@@ -325,15 +325,15 @@ html body .why figure figcaption:before, html body .why figure figcaption:after 
   position: absolute;
   overflow: hidden;
 }
-html body .why figure figcaption:before {
+html body #why figure figcaption:before {
   right: -50%;
   top: -8px;
 }
-html body .why figure figcaption:after {
+html body #why figure figcaption:after {
   left: -50%;
   bottom: -8px;
 }
-html body .why figure h4 {
+html body #why figure h4 {
   text-transform: initial;
   color: #fff;
   text-align: right;
@@ -349,25 +349,25 @@ html body .why figure h4 {
   width: 70%;
   transition: opacity 0.5s;
 }
-html body .why figure figcaption::before,
-html body .why figure figcaption:after,
-html body .why figure figcaption h1::before,
-html body .why figure figcaption h1::after {
+html body #why figure figcaption::before,
+html body #why figure figcaption:after,
+html body #why figure figcaption h1::before,
+html body #why figure figcaption h1::after {
   transition: 0.5s;
 }
-html body .why figure:hover img {
+html body #why figure:hover img {
   filter: brightness(30%);
 }
-html body .why figure:hover h4 {
+html body #why figure:hover h4 {
   opacity: 1;
 }
-html body .why figure:hover figcaption h1::before {
+html body #why figure:hover figcaption h1::before {
   height: 150%;
 }
-html body .why figure:hover figcaption h1::after {
+html body #why figure:hover figcaption h1::after {
   height: 300%;
 }
-html body .why figure:hover figcaption::before, html body .why figure:hover figcaption:after {
+html body #why figure:hover figcaption::before, html body #why figure:hover figcaption:after {
   width: 150%;
 }
 html body footer #map {
@@ -378,7 +378,7 @@ html body footer #map {
 }
 html body footer .message {
   padding: 0.6em 2.3em;
-  background-image: url("img/contact-form-bg.jpg");
+  background-image: url("../img/contact-form-bg.jpg");
   background-position-x: 0%;
   background-position-y: 50%;
   background-size: cover;
