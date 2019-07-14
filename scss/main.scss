@@ -243,7 +243,8 @@ html {
       }
     }
     #menu {
-      display: none;
+      height: 0;
+      overflow: hidden;
     }
     #why {
       padding: 1.9em;

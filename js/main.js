@@ -93,6 +93,7 @@ function initMap() {
         position: new google.maps.LatLng(38.6165855, 27.400674900000013),
         map: map
     });
-
 }
-
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1100
+}); 

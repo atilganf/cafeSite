@@ -242,7 +242,8 @@ html body #about figure img {
   display: inline-block;
 }
 html body #menu {
-  display: none;
+  height: 0;
+  overflow: hidden;
 }
 html body #why {
   padding: 1.9em;
