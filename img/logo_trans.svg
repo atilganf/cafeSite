@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="324" height="264" viewBox="0 0 324 264">
+  <g id="logo_trans" transform="translate(558 -203)">
+    <g id="logo" transform="translate(-693 203)">
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="324" height="264" transform="translate(135)" fill="rgba(255,255,255,0)"/>
+      <text id="DORA_S" data-name="DORA&apos;S" transform="translate(169 197)" fill="#fff" font-size="68" font-family="EBGaramond-Bold, EB Garamond" font-weight="700"><tspan x="0" y="0">DORA&apos;S</tspan></text>
+      <text id="cafe_brasserie" data-name="cafe &amp; brasserie" transform="translate(231 239)" fill="#fff" font-size="22" font-family="EBGaramond-Medium, EB Garamond" font-weight="500"><tspan x="0" y="0">cafe &amp; brasserie</tspan></text>
+      <path id="Path_1" data-name="Path 1" d="M169,130.463l31.519-19.271,28.554,10.831,39.385-35.447,15.754,16.739,37.416-49.232,57.109,57.109L398.43,93.469,426,130.463l-32.493-19.271-23.631,19.271-48.247-61.61-37.416,61.61L268.459,99.377l-45.293,39.385-22.647-16.739Z" transform="translate(0 -9.622)" fill="#fff"/>
+    </g>
+    <g id="Group_2" data-name="Group 2" transform="translate(5.676)">
+      <line id="Line_7" data-name="Line 7" x2="42.899" transform="translate(-317.5 433.5)" fill="none" stroke="#fff" stroke-width="3"/>
+      <line id="Line_8" data-name="Line 8" x2="42.899" transform="translate(-317.5 440.5)" fill="none" stroke="#fff" stroke-width="3"/>
+    </g>
+    <g id="Group_1" data-name="Group 1" transform="translate(-2)">
+      <line id="Line_9" data-name="Line 9" x2="53" transform="translate(-518.5 433.5)" fill="none" stroke="#fff" stroke-width="3"/>
+      <line id="Line_10" data-name="Line 10" x2="53" transform="translate(-518.5 440.5)" fill="none" stroke="#fff" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

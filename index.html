@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--1 / 15:00(1) / 16:50(1)-->
 
 <head>
     <meta charset="UTF-8">
@@ -15,10 +16,12 @@
 <body>
     <header id="anasayfa">
         <img src="img/logo.svg">
-        <a href="#"><i class="fas fa-phone-alt"></i>(0236) 2361516</a>
-        <a href="mailto:info@dorascafe.com"><i class="fas fa-paper-plane"></i>info@dorascafe.com</a>
+        <div class="info_links">
+            <a href="callto:02362361516"><i class="fas fa-phone-alt"></i>(0236) 2361516</a>
+            <a href="mailto:info@dorascafe.com"><i class="fas fa-paper-plane"></i>info@dorascafe.com</a>
+        </div>
     </header>
-    <button onclick="showNav()" class="navbtn">
+    <button class="navbtn" onclick="showNav()">
         <div id="btn_div_1"></div>
         <div id="btn_div_2"></div>
         <div id="btn_div_3"></div>
@@ -68,13 +71,13 @@
         </figure>
 
         <div class="btns">
-            <span id="prev">&#8249;</span>
-            <span id="next">&#8250;</span>
+            <span class="prev"></span>
+            <span class="next"></span>
         </div>
     </section>
     <section id="about">
         <article>
-            <h1>DORA'S CAFE & BRASSERIE
+            <h1 class="h1">DORA'S CAFE & BRASSERIE
                 HAKKINDA</h1>
             <p>Misafirlerinin konfor ve damak tadını ön planda tutan, dostlarınızla buluşup sohbetin keyfini
                 dilediğinizce sürdürebileceğiniz sıcak bir mekan.
@@ -88,38 +91,90 @@
         </figure>
     </section>
     <section id="menu">
-        <h1>menümüz</h1>
+        <h1 class="h1">menümüz</h1>
         <div class="menu-cont">
-
+            <div id="left-col">
+                <button class="active_menu_btn" onclick="showMenu(this)">kahvaltı</button>
+                <button onclick="showMenu(this)">başlangıçlar</button>
+                <button onclick="showMenu(this)">salatalar</button>
+                <button onclick="showMenu(this)">sandviç</button>
+                <button onclick="showMenu(this)">burgerler</button>
+                <button onclick="showMenu(this)">pİzzalar</button>
+                <button onclick="showMenu(this)">makarnalar</button>
+                <button onclick="showMenu(this)">ana yemekler</button>
+                <button onclick="showMenu(this)">tatlılar</button>
+                <button onclick="showMenu(this)">sıcak İçecekler</button>
+                <button onclick="showMenu(this)">soğuk İçecekler</button>
+                <button onclick="showMenu(this)">alkollü İçecekler</button>
+            </div>
+            <div id="right-col">
+                <div class="menu_div active_menu_div">
+                    <h3>kahvaltı</h3>
+                </div>
+                <div class="menu_div">
+                    <h3>başlangıçlar</h3>
+                </div>
+                <div class="menu_div">
+                    <h3>salatalar</h3>
+                </div>
+                <div class="menu_div">
+                    <h3>sandviç</h3>
+                </div>
+                <div class="menu_div">
+                    <h3>burgerler</h3>
+                </div>
+                <div class="menu_div">
+                    <h3>pİzzalar</h3>
+                </div>
+                <div class="menu_div">
+                    <h3>makarnalar</h3>
+                </div>
+                <div class="menu_div">
+                    <h3>ana yemekler</h3>
+                </div>
+                <div class="menu_div">
+                    <h3>tatlılar</h3>
+                </div>
+                <div class="menu_div">
+                    <h3>sıcak İçecekler</h3>
+                </div>
+                <div class="menu_div">
+                    <h3>soğuk İçecekler</h3>
+                </div>
+                <div class="menu_div">
+                    <h3>alkollü İçecekler</h3>
+                </div>
+            </div>
         </div>
-
     </section>
     <section id="why">
         <h1 class="h1">neden dora's cafe & brasserie ?</h1>
-        <figure class="fig_why">
-            <img src="img/neden-doras.jpg" alt="">
-            <figcaption>
-                <h1>taze & doğal</h1>
-                <h2>malzemeler</h2>
-            </figcaption>
-            <h4>En taze ve doğal malzemeler.</h4>
-        </figure>
-        <figure class="fig_why">
-            <img src="img/neden-doras-2.jpg" alt="">
-            <figcaption>
-                <h1>profesyonel</h1>
-                <h2>ekİp</h2>
-            </figcaption>
-            <h4>Heri biri alanında uzman profesyonel ekip.</h4>
-        </figure>
-        <figure class="fig_why">
-            <img src="img/neden-doras-3.jpg" alt="">
-            <figcaption>
-                <h1>zengİn İçerİklİ</h1>
-                <h2>menü</h2>
-            </figcaption>
-            <h4>Zengin yemek ve içecek seçenekleri.</h4>
-        </figure>
+        <div class="fig_cont">
+            <figure class="fig_why">
+                <img src="img/neden-doras.jpg" alt="">
+                <figcaption>
+                    <h1>taze & doğal</h1>
+                    <h2>malzemeler</h2>
+                </figcaption>
+                <h4>En taze ve doğal malzemeler.</h4>
+            </figure>
+            <figure class="fig_why">
+                <img src="img/neden-doras-2.jpg" alt="">
+                <figcaption>
+                    <h1>profesyonel</h1>
+                    <h2>ekİp</h2>
+                </figcaption>
+                <h4>Heri biri alanında uzman profesyonel ekip.</h4>
+            </figure>
+            <figure class="fig_why">
+                <img src="img/neden-doras-3.jpg" alt="">
+                <figcaption>
+                    <h1>zengİn İçerİklİ</h1>
+                    <h2>menü</h2>
+                </figcaption>
+                <h4>Zengin yemek ve içecek seçenekleri.</h4>
+            </figure>
+        </div>
     </section>
     <footer id="contact">
         <div id="map"></div>
@@ -127,29 +182,34 @@
             <input type="text" placeholder="İsim - Soyad" required>
             <input type="text" placeholder="E-mail Adresiniz" required>
             <input type="text" placeholder="Telefonunuz" required>
-            <textarea placeholder="Mesajınız"></textarea>
+            <textarea placeholder="Mesajınız" ></textarea>
             <button type="submit">Gönder</button>
         </div>
         <div class="contact">
-            <h2>İLETİŞİM</h2>
-            <p>
-                Laleli Ali Rıza Efendi Cad. No:4 <br>
-                Forum Magnesia AVM M. No: 207 <br>
-                Yunusemre / Manisa <br>
-                T. <a href="callto:02362361516">0236 236 15 16</a><br>
-                F. <a href="callto:02362361517">0236 236 15 17</a><br>
-                <a href="mailto:info@dorascafe.com">info@dorascafe.com</a><br>
-                Hafta içi: 09.00 - 23.30 <br>
-                Hafta sonu: 09.00 - 01.00
-            </p>
+            <div class="cntc-cont">
+                <img src="img/logo_trans.svg">
+                <div class="cntc-txt">
+                    <h2>İLETİŞİM</h2>
+                    <p>
+                        Laleli Ali Rıza Efendi Cad. No:4 <br>
+                        Forum Magnesia AVM M. No: 207 <br>
+                        Yunusemre / Manisa <br>
+                        T. <a href="callto:02362361516">0236 236 15 16</a><br>
+                        F. <a href="callto:02362361517">0236 236 15 17</a><br>
+                        <a href="mailto:info@dorascafe.com">info@dorascafe.com</a><br>
+                        Hafta içi: 09.00 - 23.30 <br>
+                        Hafta sonu: 09.00 - 01.00
+                    </p>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
 
 <script src="js/main.js"></script>
 <script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_Vp9S6caeV0Gy1NJtSBRGOCm46g2hH9Y&callback=initMap">
-</script>
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_Vp9S6caeV0Gy1NJtSBRGOCm46g2hH9Y&callback=initMap">
+    </script>
 
 
 </html>

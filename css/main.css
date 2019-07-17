@@ -183,25 +183,25 @@ html body .slider .btns {
   display: none;
 }
 html body #about {
-  padding: 1.9em;
+  padding: 1.9em 30px;
   background-image: url("../img/hakkimizda-bg.jpg");
   background-size: contain;
 }
 html body #about article {
-  padding-top: 1.5em;
+  padding-top: 1em;
 }
-html body #about article h1 {
+html body #about article .h1 {
   font-size: 25px;
   line-height: 1.1em;
-  width: 10em;
   font-family: cormorantGaramond, sans-serif;
   font-weight: 500;
+  width: 70%;
   color: #414a52;
 }
-html body #about article h1::after {
+html body #about article .h1::after {
   content: "";
   display: block;
-  margin-top: 0.8em;
+  margin-top: 0.55em;
   width: 50px;
   height: 2px;
   border-top: 3px solid black;
@@ -212,7 +212,7 @@ html body #about article p {
   line-height: 28px;
   font-size: 1em;
   color: #414a52;
-  padding-top: 1.6em;
+  padding-top: 1em;
 }
 html body #about article button {
   border: 1px solid #ab192d;
@@ -246,7 +246,7 @@ html body #menu {
   overflow: hidden;
 }
 html body #why {
-  padding: 1.9em;
+  padding: 1.9em 30px;
 }
 html body #why .h1 {
   font-size: 25px;
@@ -272,6 +272,8 @@ html body #why figure {
   margin: 0;
   position: relative;
   margin: 1em 0;
+  max-width: 400px;
+  overflow: hidden;
 }
 html body #why figure img {
   width: 100%;
@@ -282,8 +284,8 @@ html body #why figure figcaption {
   font-family: avantgarde_medium, sans-serif;
   position: absolute;
   z-index: 8;
-  top: 10%;
-  right: 12%;
+  top: 14%;
+  right: 10%;
 }
 html body #why figure figcaption h1 {
   color: #fff;
@@ -294,18 +296,17 @@ html body #why figure figcaption h1 {
 }
 html body #why figure figcaption h1:after, html body #why figure figcaption h1:before {
   content: "";
-  overflow: hidden;
   position: absolute;
   width: 2px;
   height: 0;
   background-color: #fff;
 }
 html body #why figure figcaption h1:after {
-  bottom: -200%;
+  bottom: -300%;
   right: -8px;
 }
 html body #why figure figcaption h1:before {
-  top: -50%;
+  top: -150%;
   left: -8px;
 }
 html body #why figure figcaption h2 {
@@ -327,11 +328,11 @@ html body #why figure figcaption:before, html body #why figure figcaption:after 
   overflow: hidden;
 }
 html body #why figure figcaption:before {
-  right: -50%;
+  right: -150%;
   top: -8px;
 }
 html body #why figure figcaption:after {
-  left: -50%;
+  left: -150%;
   bottom: -8px;
 }
 html body #why figure h4 {
@@ -344,7 +345,7 @@ html body #why figure h4 {
   font-family: avantgarde_medium, sans-serif;
   position: absolute;
   z-index: 8;
-  top: 38%;
+  top: calc(14% + 4.5em);
   opacity: 0;
   right: 12%;
   width: 70%;
@@ -363,13 +364,13 @@ html body #why figure:hover h4 {
   opacity: 1;
 }
 html body #why figure:hover figcaption h1::before {
-  height: 150%;
+  height: 250%;
 }
 html body #why figure:hover figcaption h1::after {
-  height: 300%;
+  height: 400%;
 }
 html body #why figure:hover figcaption::before, html body #why figure:hover figcaption:after {
-  width: 150%;
+  width: 250%;
 }
 html body footer #map {
   width: 100%;
@@ -378,7 +379,7 @@ html body footer #map {
   overflow: hidden;
 }
 html body footer .message {
-  padding: 0.6em 2.3em;
+  padding: 0.6em 10%;
   background-image: url("../img/contact-form-bg.jpg");
   background-position-x: 0%;
   background-position-y: 50%;
@@ -405,9 +406,11 @@ html body footer .message textarea:hover {
 }
 html body footer .message textarea {
   height: 6.4em;
+  resize: none;
 }
 html body footer .message button {
-  width: 50%;
+  padding: 10px 40px;
+  width: auto;
   background-color: #171717;
   border: none;
   margin-bottom: 1em;
@@ -418,7 +421,10 @@ html body footer .message button:hover {
 html body footer .contact {
   background-color: #252120;
   color: white;
-  padding: 2.5em 1.9em;
+  padding: 2.5em 30px;
+}
+html body footer .contact img {
+  display: none;
 }
 html body footer .contact h2 {
   font-family: geometria_medium, sans-serif;
@@ -437,6 +443,318 @@ html body footer .contact p {
 html body footer .contact p a {
   text-decoration: none;
   color: #b7b7b7;
+}
+
+@media (min-width: 768px) {
+  html body header {
+    background-color: inherit;
+    position: relative;
+    width: 100%;
+  }
+  html body header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #ab192d;
+    width: 100%;
+    height: 40px;
+  }
+  html body header img {
+    position: absolute;
+    top: 12px;
+    left: calc(45% - 320px);
+    z-index: 100;
+  }
+  html body header .info_links {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    margin-right: 10px;
+    z-index: 100;
+  }
+  html body header .info_links a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0 5px;
+    font-family: opensans, sans-serif;
+  }
+  html body header .info_links a i {
+    margin: 0 5px;
+  }
+  html body .navbtn {
+    right: 6.5%;
+  }
+  html body nav a {
+    font-size: 0.92em;
+  }
+  html body .slider #fig {
+    height: 98vh;
+  }
+  html body .slider #fig figcaption {
+    top: 55%;
+    left: 0;
+    padding-left: 40px;
+  }
+  html body .slider #fig figcaption h2 {
+    font-size: 23px;
+    line-height: 33px;
+  }
+  html body .slider #fig figcaption h3 {
+    font-size: 18px;
+  }
+  html body .slider #fig .active_figc {
+    top: 45%;
+  }
+  html body .slider .btns {
+    display: block;
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    height: 125px;
+    width: 150px;
+  }
+  html body .slider .btns span {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    transform: rotate(45deg);
+    border-color: rgba(255, 255, 255, 0.7);
+    border-style: solid;
+    cursor: pointer;
+  }
+  html body .slider .btns .prev {
+    border-width: 0 0 2px 2px;
+  }
+  html body .slider .btns .next {
+    border-width: 2px 2px 0 0;
+  }
+  html body #about {
+    padding: 1.9em 8.5%;
+  }
+  html body #why {
+    padding: 1.9em 8.5%;
+  }
+  html body footer .contact .cntc-cont {
+    margin-left: 30%;
+  }
+  html body footer .contact .cntc-cont img {
+    display: inline-block;
+    height: 110px;
+    margin-bottom: 80px;
+  }
+  html body footer .contact .cntc-cont .cntc-txt {
+    text-align: left;
+    display: inline-block;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  html body header img {
+    left: calc(23% - 215px);
+    z-index: 100;
+  }
+  html body .slider #fig .figc {
+    width: 45%;
+  }
+  html body #about {
+    display: grid;
+    grid-template-columns: 43% 57%;
+  }
+  html body #about article {
+    width: 100%;
+    padding-right: 45px;
+  }
+  html body #about article .h1 {
+    width: 100%;
+  }
+  html body #about figure img {
+    padding: 0 0 0 12px;
+  }
+  html body #menu {
+    display: block;
+    padding: 1.9em 8.5%;
+    height: auto;
+  }
+  html body #menu .h1 {
+    line-height: 1.1em;
+    display: block;
+    margin-top: 0.1em;
+    text-transform: uppercase;
+    font-family: cormorantGaramond, sans-serif;
+    font-weight: 500;
+    color: #414a52;
+  }
+  html body #menu .h1::after {
+    content: "";
+    display: block;
+    margin-top: 0.8em;
+    width: 50px;
+    height: 2px;
+    border-top: 3px solid black;
+    border-bottom: 1px solid black;
+  }
+  html body #menu .menu-cont {
+    display: grid;
+    grid-template-columns: 22% 78%;
+    height: 100vh;
+  }
+  html body #menu .menu-cont #left-col button {
+    border: none;
+    color: white;
+    font-family: avantgarde_medium, sans-serif;
+    font-weight: 700;
+    border-bottom: 1px dashed #f1f1f1;
+    background-color: #ab192c;
+    display: block;
+    width: 100%;
+    padding: 15px 15px 15px 25px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.4s;
+    outline: none;
+  }
+  html body #menu .menu-cont #left-col button:hover {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  html body #menu .menu-cont #left-col .active_menu_btn {
+    background-color: #f1f1f1;
+    color: #5f2424;
+  }
+  html body #menu .menu-cont #right-col {
+    background-color: #f1f1f1;
+    overflow-y: scroll;
+  }
+  html body #menu .menu-cont #right-col .menu_div {
+    display: none;
+    padding: 0 10px 30px 30px;
+  }
+  html body #menu .menu-cont #right-col .menu_div h3 {
+    font-family: avantgarde_medium, sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    width: 100%;
+    margin: 0;
+    padding: 25px 0;
+    text-transform: uppercase;
+  }
+  html body #menu .menu-cont #right-col .menu_div .menuIngr {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60px auto;
+    padding: 10px;
+  }
+  html body #menu .menu-cont #right-col .menu_div .menuIngr:hover {
+    background-color: #fff;
+  }
+  html body #menu .menu-cont #right-col .menu_div .menuIngr div h4 {
+    font-family: opensans_semibold, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    padding: 0;
+    margin: 0;
+  }
+  html body #menu .menu-cont #right-col .menu_div .menuIngr div p {
+    color: #414A52;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: opensans, sans-serif;
+    line-height: 1.5em;
+  }
+  html body #menu .menu-cont #right-col .menu_div .menuIngr img {
+    width: 100%;
+    padding: 5px 15px 15px 5px;
+  }
+  html body #menu .menu-cont #right-col .active_menu_div {
+    display: block;
+  }
+  html body #why .fig_cont {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
+  }
+  html body #why .fig_cont .fig_why {
+    display: block;
+  }
+  html body #contact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  html body #contact #map {
+    height: 100%;
+    margin: 0;
+  }
+  html body #contact .message {
+    height: 100%;
+    margin: 0;
+  }
+  html body #contact .contact {
+    grid-area: 2/1/2/2;
+    width: 200%;
+    padding: 25px 0 40px 0;
+  }
+  html body #contact .contact .cntc-cont {
+    padding: 0;
+    display: block;
+    margin: 0;
+  }
+  html body #contact .contact .cntc-cont img {
+    display: inline-block;
+    width: 17%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    margin-left: 33%;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  html body #contact .contact .cntc-cont .cntc-txt {
+    display: inline-block;
+    width: 49%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #424242;
+    border-radius: 5px;
+    height: 124px;
+  }
+}
+@media (max-width: 414px) {
+  .h1 {
+    font-size: 25px !important;
+  }
+}
+@media (max-width: 640px) and (min-width: 414px) {
+  .h1 {
+    font-size: 30px !important;
+  }
+}
+@media (min-width: 641px) {
+  .h1 {
+    font-size: 36px !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
