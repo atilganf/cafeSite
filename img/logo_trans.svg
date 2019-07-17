@@ -1,18 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="324" height="264" viewBox="0 0 324 264">
-  <g id="logo_trans" transform="translate(558 -203)">
-    <g id="logo" transform="translate(-693 203)">
-      <rect id="Rectangle_2" data-name="Rectangle 2" width="324" height="264" transform="translate(135)" fill="rgba(255,255,255,0)"/>
-      <text id="DORA_S" data-name="DORA&apos;S" transform="translate(169 197)" fill="#fff" font-size="68" font-family="EBGaramond-Bold, EB Garamond" font-weight="700"><tspan x="0" y="0">DORA&apos;S</tspan></text>
-      <text id="cafe_brasserie" data-name="cafe &amp; brasserie" transform="translate(231 239)" fill="#fff" font-size="22" font-family="EBGaramond-Medium, EB Garamond" font-weight="500"><tspan x="0" y="0">cafe &amp; brasserie</tspan></text>
-      <path id="Path_1" data-name="Path 1" d="M169,130.463l31.519-19.271,28.554,10.831,39.385-35.447,15.754,16.739,37.416-49.232,57.109,57.109L398.43,93.469,426,130.463l-32.493-19.271-23.631,19.271-48.247-61.61-37.416,61.61L268.459,99.377l-45.293,39.385-22.647-16.739Z" transform="translate(0 -9.622)" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="324" height="247" viewBox="0 0 324 247">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="324" height="247" fill="none"/>
+    </clipPath>
+    <filter id="DORA_S" x="27" y="99" width="271" height="105" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.431"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="cafe_brasserie" x="86" y="182" width="153" height="47" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.431"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_1" x="27" y="23.462" width="270" height="100.657" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.431"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="logo_trans" clip-path="url(#clip-path)">
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="324" height="247" fill="rgba(171,25,45,0)"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#DORA_S)">
+      <text id="DORA_S-2" data-name="DORA&apos;S" transform="translate(36 172)" fill="#fff" font-size="67" font-family="EBGaramond-Bold, EB Garamond" font-weight="700"><tspan x="0" y="0">DORA&apos;S</tspan></text>
     </g>
-    <g id="Group_2" data-name="Group 2" transform="translate(5.676)">
-      <line id="Line_7" data-name="Line 7" x2="42.899" transform="translate(-317.5 433.5)" fill="none" stroke="#fff" stroke-width="3"/>
-      <line id="Line_8" data-name="Line 8" x2="42.899" transform="translate(-317.5 440.5)" fill="none" stroke="#fff" stroke-width="3"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#cafe_brasserie)">
+      <text id="cafe_brasserie-2" data-name="cafe &amp; brasserie" transform="translate(95 210)" fill="#fff" font-size="22" font-family="EBGaramond-Medium, EB Garamond" font-weight="500"><tspan x="0" y="0">cafe &amp; brasserie</tspan></text>
     </g>
-    <g id="Group_1" data-name="Group 1" transform="translate(-2)">
-      <line id="Line_9" data-name="Line 9" x2="53" transform="translate(-518.5 433.5)" fill="none" stroke="#fff" stroke-width="3"/>
-      <line id="Line_10" data-name="Line 10" x2="53" transform="translate(-518.5 440.5)" fill="none" stroke="#fff" stroke-width="3"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_1)">
+      <path id="Path_1-2" data-name="Path 1" d="M169,132.9l30.906-22.818,22.54,16.935,42.116-41.071,17.409,22.3L318.66,54.083l50.134,59.657,25.173-17.116L421,128.977l-29.9-22.818-23.307,18.857L318.66,68.566,281.971,120.7,265.543,97.515,221.827,136.74l-21.921-18Z" transform="translate(-133 -24.62)" fill="#fff"/>
     </g>
   </g>
 </svg>
